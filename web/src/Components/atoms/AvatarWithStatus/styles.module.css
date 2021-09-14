@@ -1,0 +1,10 @@
+.onlineStatusDotColor {
+  fill: var(--color-online-status-dot);
+}
+.offlineStatusDotColor {
+  fill: var(--color-offline-status-dot);
+}
+.sizeSm {
+  width: var(--size-sm-avatar-with-status);
+  height: var(--size-sm-avatar-with-status);
+}

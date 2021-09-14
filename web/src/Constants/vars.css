@@ -1,0 +1,9 @@
+:root {
+  --background-primary: #33363c;
+  --background-secondary: #2f3136;
+  --background-tertiary: #1e2023;
+  --background-guild-divider: hsla(0, 0%, 100%, 0.06);
+  --color-online-status-dot: #389e59;
+  --color-offline-status-dot: #6f7a87;
+  --size-sm-avatar-with-status: 32px;
+}

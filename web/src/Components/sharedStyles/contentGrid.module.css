@@ -1,0 +1,23 @@
+.contentGrid {
+  display: grid;
+  grid-template-columns: 240px 1fr 240px;
+  grid-template-rows: 48px 1fr;
+  grid-template-areas:
+    "upper-left-box title-bar title-bar"
+    "left-drawer chat-area right-drawer";
+}
+.upperLeftBoxArea {
+  grid-area: upper-left-box;
+}
+.titleBar {
+  grid-area: title-bar;
+}
+.leftDrawer {
+  grid-area: left-drawer;
+}
+.chatArea {
+  grid-area: chat-area;
+}
+.rightDrawer {
+  grid-area: right-drawer;
+}

@@ -1,0 +1,20 @@
+html,
+body {
+  overflow: hidden;
+}
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+.appGrid {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "guild-navbar dm-page";
+}
+.guildNavbarArea {
+  grid-area: guild-navbar;
+}
+.dmPageArea {
+  grid-area: dm-page;
+}
