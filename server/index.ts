@@ -1,9 +1,12 @@
-import express, { Application, Request, Response } from "express";
+import express, { Request, Response } from "express";
+import cors from "cors";
+require("dotenv").config();
 
-const app: Application = express();
-const port = 3000;
+const app = express();
+const PORT = process.env.PORT || 5000;
 
 // Body parsing Middleware
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -14,8 +17,8 @@ app.get("/", async (req: Request, res: Response): Promise<Response> => {
 });
 
 try {
-  app.listen(port, (): void => {
-    console.log(`Connected successfully on port ${port}`);
+  app.listen(PORT, (): void => {
+    console.log(`Connected successfully on port ${PORT}`);
   });
 } catch (error: any) {
   console.error(`Error occured: ${error.message}`);
