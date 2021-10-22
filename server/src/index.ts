@@ -10,6 +10,8 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+require("./initDB")();
+
 app.get("/", async (req: Request, res: Response): Promise<Response> => {
   return res.status(200).send({
     message: "Hello World!",
