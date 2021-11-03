@@ -45,7 +45,6 @@ const userGrouping = (usernamesParam: string[]): string[][] => {
   return groups;
 };
 
-// const usernames = ["Anthony", "Britney", "Charlie", "Dana", "Greg"];
 const usernames = ["Anthony", "Britney", "Charlie", "Dana"];
 const groups = userGrouping(usernames);
 
